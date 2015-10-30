@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dotedlabs.chatapp.server.view.ServerViewController">
+   <children>
+      <TextArea fx:id="serverLog" layoutX="14.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="90.0" />
+      <Label alignment="CENTER" layoutX="15.0" layoutY="61.0" text="Server Log" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="61.0" />
+      <ButtonBar layoutX="386.0" layoutY="4.0" prefHeight="40.0" prefWidth="251.0" AnchorPane.rightAnchor="15.0">
+        <buttons>
+          <Button fx:id="serverStartBtn" mnemonicParsing="false" onAction="#handleServerStart" prefHeight="25.0" prefWidth="131.0" text="Start Server" />
+            <Button fx:id="serverStopBtn" mnemonicParsing="false" onAction="#handleServerStop" text="Stop Server" />
+        </buttons>
+      </ButtonBar>
+      <TextField fx:id="ipAddress" layoutX="81.0" layoutY="12.0" AnchorPane.topAnchor="13.0" />
+      <Label layoutX="15.0" layoutY="16.0" text="IP Address" AnchorPane.topAnchor="15.0" />
+      <Label layoutX="239.0" layoutY="16.0" text="Port" />
+      <TextField fx:id="serverPort" layoutX="268.0" layoutY="12.0" prefHeight="25.0" prefWidth="64.0" text="2000" AnchorPane.topAnchor="13.0" />
+      <Separator layoutX="14.0" layoutY="52.0" prefWidth="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+   </children>
+</AnchorPane>
